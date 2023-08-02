@@ -1,6 +1,9 @@
 @charset "UTF-8";
 
+/* Mobile First */
+
 * {
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
     padding: 0px;
 }
@@ -10,3 +13,42 @@
     Verde: #49d09d
     Lilás: #5f2c82
  */
+
+body {
+    background-color: #5f2c82;
+}
+
+section#login {
+    background-color: white;
+    text-align: justify;
+    /* Centralizar a Section */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+}
+
+div
+
+p {
+    font-size: 0.9em;
+}
+
+section#login h1 {
+    text-align: center;   
+}
+
+div { 
+    display: inline-block;
+}
+ div#imagem {
+    width: 100px;
+    height: 100px;
+ }
+.btn{
+    margin: 5px;
+    width: 400px;
+    padding: 5px;
+    display: block;
+}
