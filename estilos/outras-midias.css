@@ -16,7 +16,7 @@
         width: 80vw;
         height: 40vh;
     }
-
+/* Posicionado as divs lado a lado */
     div#imagem {
         width: 30%;
         height: 100%;
@@ -33,8 +33,8 @@
     }
 }
 
-/* Desktop */
-@media screen and (min-width:992px) and (max-width:1200px){
+/* Desktop e Telas Grandes*/
+@media screen and (min-width:992px){
     section#login {
         width: 900px;
         height: 40vh;
@@ -43,38 +43,26 @@
     div#imagem {
         width: 40%;
         height: 100%;
-        float: left;
+        float: right;
     }
 
     div#formulario {
         width: 60%;
-        float: right;
+        float: left;
     }
 
     body, html {
         background-image: linear-gradient( to bottom,#5f2c82,#49d09d) ;
     }
-}
 
-/* Telas Grandes */
-@media screen and (min-width:1200px) {
-    section#login {
-        width: 80vw;
-        height: 40vh;
+    div#formulario > h1 {
+        text-align: center;
+        padding: 10px;
+        font-size: 2.0em;
     }
-
-    div#imagem {
-        width: 40%;
-        height: 100%;
-        float: left;
-    }
-
-    div#formulario {
-        width: 60%;
-        float: right;
-    }
-
-    body, html {
-        background-image: linear-gradient( to bottom,#5f2c82,#49d09d) ;
+    
+    div#formulario > p {
+        font-size: 1.2em;
     }
 }
+

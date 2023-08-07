@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tela de Login</title>
+    <!-- Biblioteca de icondes do Google -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/outras-midias.css">
 </head>
@@ -18,19 +20,19 @@
             <div id="formulario">
                 <h1>Login</h1>
                 <p>Seja Bem-Vindo(a) novamente. Faça o login para acessar sua conta e ter acesso as configurações no seu ambiente</p>
-                <form action="login.php" method="post">
-                    <p>
-                        <label for="iemail">Usuário:</label>
-                        <input type="email" name="email" id="iemail" autocomplete="email" required placeholder="Insira seu E-mail">
-                    </p>
-                    <p>
+                <form action="login.php" method="post" autocomplete="on">
+                    <div class="campo">
+                        <span class="material-icons">person</span><!-- Icone do google -->
+                        <input type="email" name="login" id="ilogin" autocomplete="email" required placeholder="Insira seu E-mail">
+                        <label for="ilogin">Usuário:</label>
+                    </div>
+                    <div class="campo">
+                        <span class="material-icons">vpn_key</span><!-- Icone do google -->
+                        <input type="password" name="senha" id="isenha" autocomplete="current-password" minlength="8" maxlength="10" placeholder="Insira sua Senha" >
                         <label for="isenha">Senha:</label>
-                        <input type="password" name="senha" id="isenha" required minlength="8" maxlength="10" placeholder="Insira sua Senha">
-                    </p>
-                    <p>
-                        <input class="btn" type="submit" value="Entrar">
-                        <input class="btn" type="button" value="Esqueci minha Senha">
-                    </p>
+                    </div>
+                    <input type="submit" value="Entrar">
+                    <a href="esqueci.html"> Esqueci a senha <i class="material-icons">mail</i></a>
                 </form>
             </div>
         </section>
