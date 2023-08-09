@@ -14,7 +14,7 @@
 @media screen and (min-width:768px) and (max-width: 992px) {
     section#login {
         width: 80vw;
-        height: 40vh;
+        height: 320px;
     }
     /* Posicionado as divs lado a lado */
     div#imagem {
@@ -31,13 +31,18 @@
     body, html {
         background-image: linear-gradient( to bottom,#5f2c82,#49d09d) ;
     }
+
+    div#formulario > p {
+        font-size: 0.9em;
+        margin: 12px 0px;/* cima/baixo 20px - esquerda/direita 0px */
+    }
 }
 
 /* Desktop e Telas Grandes*/
 @media screen and (min-width:992px){
     section#login {
         width: 900px;
-        height: 40vh;
+        height: 350px;
     }
 
     div#imagem {
@@ -62,7 +67,8 @@
     }
     
     div#formulario > p {
-        font-size: 1.2em;
+        font-size: 1.1em;
+        margin: 20px 0px;/* cima/baixo 20px - esquerda/direita 0px */
     }
 }
 

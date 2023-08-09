@@ -32,20 +32,20 @@ section#login {
     width: 250px;
     height: 520px;
     border-radius: 20px;
-    /* Centralizar a Section */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); 
-    /* Esconder qualquer elemento que ultrapassou a borda da section */
-    overflow: hidden; 
+    overflow: hidden; /* Esconder qualquer elemento que ultrapassou a borda da section */
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.452);
+     /* Centralizar a Section */
+     position: absolute;
+     top: 50%;
+     left: 50%;
+    transform: translate(-50%, -50%); /* sempre colocar a declaração transform na parte final do codigo*/
     /* Animação entre transições */
     transition: width 0.3s,height 0.3s;
     /* Suavisar a animação */
     transition-timing-function: ease;
 }
 
+/* Imagem */
 div#imagem {
     display: block;
     background: #5f2c82 url(../imagem/pexels-dinnow-9444476.jpg) no-repeat;
@@ -54,6 +54,7 @@ div#imagem {
     background-position: left bottom;
 }
 
+/* Formulario */
 div#formulario {
     display: block;
     padding: 10px;
@@ -69,30 +70,44 @@ div#formulario > p {
 }
 
 form > div.campo {
-    background-color: #49d09d;
-    background-color: ;
+    background-color: #5f2c82;
+    border: 2px solid #5f2c82;
     display: block;
     width: 100%;
     height: 40px;
-    border-radius: 5px;
+    border-radius: 8px;
     margin: 5px 0px;
     color: white;
-    text-align: center;
 }
 
-span.material-icons {
-    font-size: 0.8em;
+/* Icone do formulario */
+div.campo > span {
+    font-size: 2em;
+    padding: 2px;
 }
 
 div.campo > label {
     display: none;
 }
 
+/* Caixas de usuario e senha */
 div.campo > input {
-    margin-top: 11px;
+    background-color: #49d09d;
+    width: calc(100% - 41px); /* O tamanho do elemento será de tamanho total menos a quantidade de pixels informada*/
+    height: 100%;
+    border-radius: 8px;
     border: none;
+    font-size: 1em;
+    padding: 4px;
+    transform: translateY(-9px);/*mover pixel para cima*/
 }
 
+/* Campo em foco (quando ele for selecionado) */
+div.campo > input:focus-within {
+    background-color: white;
+}
+
+/* Botão enviar */
 form > input[type=submit] { /*cochetes usados parar declarar tipo do input*/
     display: block;
     font-size: 1em;
@@ -100,7 +115,7 @@ form > input[type=submit] { /*cochetes usados parar declarar tipo do input*/
     height: 40px;
     background-color: #49d09d;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     padding-bottom: 3px;
     color: white;
     cursor: pointer;
@@ -110,6 +125,7 @@ form > input[type=submit]:hover {
     background-color: #349670;
 }
 
+/* Botão esqueci minha senha */
 form > a.botao {
     display: block;
     font-size: 1em;
@@ -118,7 +134,7 @@ form > a.botao {
     height: 40px;
     background-color: white;
     border: 1px solid #349670;
-    border-radius: 5px;
+    border-radius: 8px;
     color: #349670;
     cursor: pointer;
     text-align: center;
