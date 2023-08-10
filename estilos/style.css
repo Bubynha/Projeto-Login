@@ -151,3 +151,24 @@ form > a.botao:hover {
     color: white;
 }
 
+@media screen and (orientation:landscape) {
+    section#login {
+        width: 80vw;
+        height: 320px;
+    }
+    /* Posicionado as divs lado a lado */
+    div#imagem {
+        width: 30%;
+        height: 100%;
+        float: left;
+    }
+
+    div#formulario {
+        width: 70%;
+        float: right;
+    }
+
+    body, html {
+        background-color: #5f2c82;
+    }
+}
